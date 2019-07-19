@@ -72,6 +72,8 @@
                 usermessage : document.getElementById('usermessage').value
             },function(confirmation){
                 document.getElementById('messagelist').innerHTML += `<li class="list-group-item"><span class='badge badge-primary'>${confirmation.username}</span> : ${confirmation.usermessage}</li>`;
+                document.getElementById('username').value = '';
+                document.getElementById('usermessage').value = '';
             })
         }
 
